@@ -80,7 +80,7 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's users" }}
+                title={{ text: "工作时间" }}
                 count="2,300"
                 percentage={{ color: "success", text: "+3%" }}
                 icon={{ color: "info", component: <IoGlobe size="22px" color="white" /> }}
@@ -88,7 +88,7 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "new clients" }}
+                title={{ text: "当前功率" }}
                 count="+3,462"
                 percentage={{ color: "error", text: "-2%" }}
                 icon={{ color: "info", component: <IoDocumentText size="22px" color="white" /> }}
@@ -163,13 +163,13 @@ function Dashboard() {
                     />
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Active Users
+                    空气质量
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
-                      (+23){" "}
+                      {" "}
                       <VuiTypography variant="button" color="text" fontWeight="regular">
-                        than last week
+                        当前空气质量
                       </VuiTypography>
                     </VuiTypography>
                   </VuiBox>

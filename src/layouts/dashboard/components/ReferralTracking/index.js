@@ -106,7 +106,7 @@ function ReferralTracking() {
 								}
 							})}>
 							<VuiTypography color='text' variant='button' fontWeight='regular' mb='5px'>
-								Bonus
+								当前光线
 							</VuiTypography>
 							<VuiTypography color='white' variant='lg' fontWeight='bold'>
 								1,465
