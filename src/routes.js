@@ -40,7 +40,7 @@
 
 // Vision UI EnvironmentDetection React layouts
 import EnvironmentDetection from "layouts/environmentDetection";
-import Tables from "layouts/tables";
+import Settings from "layouts/settings";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Profile from "layouts/profile";
@@ -68,11 +68,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
-    route: "/tables",
+    name: "Settings",
+    key: "settings",
+    route: "/settings",
     icon: <IoStatsChart size="15px" color="inherit" />,
-    component: Tables,
+    component: Settings,
     noCollapse: true,
   },
   {

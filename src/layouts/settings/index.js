@@ -30,10 +30,10 @@ import Footer from "examples/Footer";
 import Table from "examples/Tables/Table";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+import authorsTableData from "layouts/settings/data/authorsTableData";
+import projectsTableData from "layouts/settings/data/projectsTableData";
 
-function Tables() {
+function Settings() {
   const { columns, rows } = authorsTableData;
   const { columns: prCols, rows: prRows } = projectsTableData;
 
@@ -95,4 +95,4 @@ function Tables() {
   );
 }
 
-export default Tables;
+export default Settings;
