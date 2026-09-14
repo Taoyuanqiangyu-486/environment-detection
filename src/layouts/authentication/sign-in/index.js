@@ -21,7 +21,7 @@ import { useState } from "react";
 // react-router-dom components
 import { Link } from "react-router-dom";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
@@ -29,7 +29,7 @@ import VuiButton from "components/VuiButton";
 import VuiSwitch from "components/VuiSwitch";
 import GradientBorder from "examples/GradientBorder";
 
-// Vision UI Dashboard assets
+// Vision UI EnvironmentDetection assets
 import radialGradient from "assets/theme/functions/radialGradient";
 import palette from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
@@ -51,7 +51,7 @@ function SignIn() {
       color="white"
       description="Enter your email and password to sign in"
       premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      motto="THE VISION UI ENVIRONMENTDETECTION"
       image={bgSignIn}
     >
       <VuiBox component="form" role="form">

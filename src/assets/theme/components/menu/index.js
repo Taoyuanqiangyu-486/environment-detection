@@ -16,14 +16,14 @@
 
 */
 
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import boxShadows from "assets/theme/base/boxShadows";
 import typography from "assets/theme/base/typography";
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 import linearGradient from "assets/theme/functions/linearGradient";
 
-// Vision UI Dashboard React helper functions
+// Vision UI EnvironmentDetection React helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { borderWidth } = borders;

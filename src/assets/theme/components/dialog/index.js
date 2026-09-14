@@ -16,7 +16,7 @@
 
 */
 
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import borders from "assets/theme/base/borders";
 import boxShadows from "assets/theme/base/boxShadows";
 

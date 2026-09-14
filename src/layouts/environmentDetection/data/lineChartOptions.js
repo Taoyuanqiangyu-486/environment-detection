@@ -16,32 +16,40 @@
 
 */
 
-export const barChartOptionsDashboard = {
+export const lineChartOptionsEnvironmentDetection = {
   chart: {
     toolbar: {
       show: false,
     },
   },
   tooltip: {
-    style: {
-      fontSize: "10px",
-      fontFamily: "Plus Jakarta Display",
-    },
-    onDatasetHover: {
-      style: {
-        fontSize: "10px",
-        fontFamily: "Plus Jakarta Display",
-      },
-    },
     theme: "dark",
   },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: "smooth",
+  },
   xaxis: {
-    categories: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    show: false,
+    type: "datetime",
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
     labels: {
-      show: false,
       style: {
-        colors: "#fff",
+        colors: "#c8cfca",
         fontSize: "10px",
       },
     },
@@ -53,42 +61,33 @@ export const barChartOptionsDashboard = {
     },
   },
   yaxis: {
-    show: true,
-    color: "#fff",
     labels: {
-      show: true,
       style: {
-        colors: "#fff",
+        colors: "#c8cfca",
         fontSize: "10px",
-        fontFamily: "Plus Jakarta Display",
       },
     },
   },
-  grid: {
+  legend: {
     show: false,
   },
+  grid: {
+    strokeDashArray: 5,
+    borderColor: "#56577A",
+  },
   fill: {
-    colors: "#fff",
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  plotOptions: {
-    bar: {
-      borderRadius: 8,
-      columnWidth: "12px",
+    type: "gradient",
+    gradient: {
+      shade: "dark",
+      type: "vertical",
+      shadeIntensity: 0,
+      gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
+      inverseColors: true,
+      opacityFrom: 0.8,
+      opacityTo: 0,
+      stops: [],
     },
+    colors: ["#0075FF", "#2CD9FF"],
   },
-  responsive: [
-    {
-      breakpoint: 768,
-      options: {
-        plotOptions: {
-          bar: {
-            borderRadius: 0,
-          },
-        },
-      },
-    },
-  ],
+  colors: ["#0075FF", "#2CD9FF"],
 };

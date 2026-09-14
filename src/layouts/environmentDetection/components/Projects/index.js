@@ -25,15 +25,15 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { BsCheckCircleFill } from "react-icons/bs";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard Materail-UI example components
+// Vision UI EnvironmentDetection Materail-UI example components
 import Table from "examples/Tables/Table";
 
 // Data
-import data from "layouts/dashboard/components/Projects/data";
+import data from "layouts/environmentDetection/components/Projects/data";
 
 function Projects() {
   const { columns, rows } = data();

@@ -22,18 +22,18 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
 
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import borders from "assets/theme/base/borders";
 
 // Images
 import colors from "assets/theme/base/colors";
 
-// Vision UI Dashboard component exemples
+// Vision UI EnvironmentDetection component exemples
 import Mastercard from "examples/Icons/Mastercard";
 import Visa from "examples/Icons/Visa";
 

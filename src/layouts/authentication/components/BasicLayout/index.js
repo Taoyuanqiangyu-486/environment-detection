@@ -22,11 +22,11 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard React example components
+// Vision UI EnvironmentDetection React example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
@@ -39,7 +39,7 @@ function BasicLayout({ title, description, image, children }) {
       <DefaultNavbar
         action={{
           type: "external",
-          route: "https://creative-tim.com/product/vision-ui-dashboard-react",
+          route: "https://creative-tim.com/product/vision-ui-environmentDetection-react",
           label: "Free Download",
         }}
         transparent

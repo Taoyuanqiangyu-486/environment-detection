@@ -16,7 +16,7 @@
 
 */
 
-export const lineChartOptionsDashboard = {
+export const lineChartOptionsEnvironmentDetection = {
   chart: {
     toolbar: {
       show: false,

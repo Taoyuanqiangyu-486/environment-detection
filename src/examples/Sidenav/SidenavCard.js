@@ -22,7 +22,7 @@ import CardContent from "@mui/material/CardContent";
 import Icon from "@mui/material/Icon";
 import Link from "@mui/material/Link";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiButton from "components/VuiButton";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
@@ -30,7 +30,7 @@ import VuiTypography from "components/VuiTypography";
 // Custom styles for the SidenavCard
 import { card, cardContent, cardIconBox, cardIcon } from "examples/Sidenav/styles/sidenavCard";
 
-// Vision UI Dashboard React context
+// Vision UI EnvironmentDetection React context
 import { useVisionUIController } from "context";
 
 function SidenavCard({ color, ...rest }) {
@@ -64,7 +64,7 @@ function SidenavCard({ color, ...rest }) {
           </VuiBox>
           <VuiButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/vision-ui-dashboard/"
+            href="https://www.creative-tim.com/learning-lab/react/quick-start/vision-ui-environmentDetection/"
             target="_blank"
             rel="noreferrer"
             size="small"

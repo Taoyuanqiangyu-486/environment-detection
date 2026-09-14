@@ -19,13 +19,13 @@
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Vision UI EnvironmentDetection React example components
+import EnvironmentDetectionLayout from "examples/LayoutContainers/EnvironmentDetectionLayout";
+import EnvironmentDetectionNavbar from "examples/Navbars/EnvironmentDetectionNavbar";
 import Footer from "examples/Footer";
 import Table from "examples/Tables/Table";
 
@@ -38,8 +38,8 @@ function Tables() {
   const { columns: prCols, rows: prRows } = projectsTableData;
 
   return (
-    <DashboardLayout>
-      <DashboardNavbar />
+    <EnvironmentDetectionLayout>
+      <EnvironmentDetectionNavbar />
       <VuiBox py={3}>
         <VuiBox mb={3}>
           <Card>
@@ -91,7 +91,7 @@ function Tables() {
         </Card>
       </VuiBox>
       <Footer />
-    </DashboardLayout>
+    </EnvironmentDetectionLayout>
   );
 }
 

@@ -19,21 +19,21 @@
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard React example components
+// Vision UI EnvironmentDetection React example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
 // Authentication layout components
 import Footer from "layouts/authentication/components/Footer";
 
-// Vision UI Dashboard React theme functions
+// Vision UI EnvironmentDetection React theme functions
 import colors from "assets/theme/base/colors";
 
-// Vision UI Dashboard React theme functions
+// Vision UI EnvironmentDetection React theme functions
 import tripleLinearGradient from "assets/theme/functions/tripleLinearGradient";
 
 function CoverLayout({
@@ -61,7 +61,7 @@ function CoverLayout({
       <DefaultNavbar
         action={{
           type: "external",
-          route: "https://creative-tim.com/product/vision-ui-dashboard-pro-react",
+          route: "https://creative-tim.com/product/vision-ui-environmentDetection-pro-react",
           label: "BUY NOW",
         }}
       />

@@ -16,7 +16,7 @@
 
 */
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiButton from "components/VuiButton";
 import VuiBox from "components/VuiBox";
 

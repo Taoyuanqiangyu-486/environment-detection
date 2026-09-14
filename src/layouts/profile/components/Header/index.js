@@ -24,18 +24,18 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 // Images
 import burceMars from "assets/images/avatar-simmmple.png";
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 import VuiAvatar from "components/VuiAvatar";
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-// Vision UI Dashboard React icons
+// Vision UI EnvironmentDetection React icons
 import { IoCube } from "react-icons/io5";
 import { IoDocument } from "react-icons/io5";
 import { IoBuild } from "react-icons/io5";
-// Vision UI Dashboard React example components
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Vision UI EnvironmentDetection React example components
+import EnvironmentDetectionNavbar from "examples/Navbars/EnvironmentDetectionNavbar";
 import { useEffect, useState } from "react";
 
 function Header() {
@@ -66,7 +66,7 @@ function Header() {
 
   return (
     <VuiBox position="relative">
-      <DashboardNavbar light />
+      <EnvironmentDetectionNavbar light />
       <Card
         sx={{
           px: 3,

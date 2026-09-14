@@ -29,7 +29,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 
 // Custom styles for the SidenavCollapse
@@ -40,7 +40,7 @@ import {
   collapseText,
 } from "examples/Sidenav/styles/sidenavCollapse";
 
-// Vision UI Dashboard React context
+// Vision UI EnvironmentDetection React context
 import { useVisionUIController } from "context";
 
 function SidenavCollapse({

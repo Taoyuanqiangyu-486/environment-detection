@@ -24,19 +24,19 @@ import { useLocation } from "react-router-dom";
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard React context
+// Vision UI EnvironmentDetection React context
 import { useVisionUIController, setLayout } from "context";
 
-function DashboardLayout({ children }) {
+function EnvironmentDetectionLayout({ children }) {
   const [controller, dispatch] = useVisionUIController();
   const { miniSidenav } = controller;
   const { pathname } = useLocation();
 
   useEffect(() => {
-    setLayout(dispatch, "dashboard");
+    setLayout(dispatch, "environmentDetection");
   }, [pathname]);
 
   return (
@@ -59,9 +59,9 @@ function DashboardLayout({ children }) {
   );
 }
 
-// Typechecking props for the DashboardLayout
-DashboardLayout.propTypes = {
+// Typechecking props for the EnvironmentDetectionLayout
+EnvironmentDetectionLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default DashboardLayout;
+export default EnvironmentDetectionLayout;

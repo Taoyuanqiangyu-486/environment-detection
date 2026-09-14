@@ -31,25 +31,25 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
 
-// Vision UI Dashboard React example components
+// Vision UI EnvironmentDetection React example components
 import Breadcrumbs from "examples/Breadcrumbs";
 import NotificationItem from "examples/Items/NotificationItem";
 
-// Custom styles for DashboardNavbar
+// Custom styles for EnvironmentDetectionNavbar
 import {
   navbar,
   navbarContainer,
   navbarRow,
   navbarIconButton,
   navbarMobileMenu,
-} from "examples/Navbars/DashboardNavbar/styles";
+} from "examples/Navbars/EnvironmentDetectionNavbar/styles";
 
-// Vision UI Dashboard React context
+// Vision UI EnvironmentDetection React context
 import {
   useVisionUIController,
   setTransparentNavbar,
@@ -61,7 +61,7 @@ import {
 import team2 from "assets/images/team-2.jpg";
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 
-function DashboardNavbar({ absolute, light, isMini }) {
+function EnvironmentDetectionNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useVisionUIController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator } = controller;
@@ -220,18 +220,18 @@ function DashboardNavbar({ absolute, light, isMini }) {
   );
 }
 
-// Setting default values for the props of DashboardNavbar
-DashboardNavbar.defaultProps = {
+// Setting default values for the props of EnvironmentDetectionNavbar
+EnvironmentDetectionNavbar.defaultProps = {
   absolute: false,
   light: false,
   isMini: false,
 };
 
-// Typechecking props for the DashboardNavbar
-DashboardNavbar.propTypes = {
+// Typechecking props for the EnvironmentDetectionNavbar
+EnvironmentDetectionNavbar.propTypes = {
   absolute: PropTypes.bool,
   light: PropTypes.bool,
   isMini: PropTypes.bool,
 };
 
-export default DashboardNavbar;
+export default EnvironmentDetectionNavbar;

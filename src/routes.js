@@ -17,7 +17,7 @@
 */
 
 /** 
-  All of the routes for the Vision UI Dashboard React are added here,
+  All of the routes for the Vision UI EnvironmentDetection React are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -38,8 +38,8 @@
   10. The `component` key is used to store the component of its route.
 */
 
-// Vision UI Dashboard React layouts
-import Dashboard from "layouts/dashboard";
+// Vision UI EnvironmentDetection React layouts
+import EnvironmentDetection from "layouts/environmentDetection";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
@@ -47,7 +47,7 @@ import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
-// Vision UI Dashboard React icons
+// Vision UI EnvironmentDetection React icons
 import { IoRocketSharp } from "react-icons/io5";
 import { IoIosDocument } from "react-icons/io";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -59,11 +59,11 @@ import { IoHome } from "react-icons/io5";
 const routes = [
   {
     type: "collapse",
-    name: "Dashboard",
-    key: "dashboard",
-    route: "/dashboard",
+    name: "EnvironmentDetection",
+    key: "environmentDetection",
+    route: "/environmentDetection",
     icon: <IoHome size="15px" color="inherit" />,
-    component: Dashboard,
+    component: EnvironmentDetection,
     noCollapse: true,
   },
   {

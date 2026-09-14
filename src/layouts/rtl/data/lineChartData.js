@@ -16,7 +16,7 @@
 
 */
 
-export const lineChartDataDashboard = [
+export const lineChartDataEnvironmentDetection = [
   {
     name: "تطبيقات الموبايل",
     data: [500, 250, 300, 220, 500, 250, 300, 230, 300, 350, 250, 400],

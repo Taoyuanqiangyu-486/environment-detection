@@ -23,10 +23,10 @@ import PropTypes from "prop-types";
 import Menu from "@mui/material/Menu";
 // import Grid from "@mui/material/Grid";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard React example components
+// Vision UI EnvironmentDetection React example components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 import palette from "assets/theme/base/colors";
 import tripleLinearGradient from "assets/theme/functions/tripleLinearGradient";
@@ -66,7 +66,7 @@ function DefaultNavbarMobile({ open, close }) {
       }}
     >
       <VuiBox px={0.5}>
-        <DefaultNavbarLink icon="donut_large" name="dashboard" route="/dashboard" />
+        <DefaultNavbarLink icon="donut_large" name="environmentDetection" route="/environmentDetection" />
         <DefaultNavbarLink icon="person" name="profile" route="/profile" />
         <DefaultNavbarLink icon="account_circle" name="sign up" route="/authentication/sign-up" />
         <DefaultNavbarLink icon="key" name="sign in" route="/authentication/sign-in" />

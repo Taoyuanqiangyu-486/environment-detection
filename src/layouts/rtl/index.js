@@ -21,15 +21,15 @@ import { Card, Stack } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import colors from "assets/theme/base/colors";
 
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import linearGradient from "assets/theme/functions/linearGradient";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiProgress from "components/VuiProgress";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard React contexts
+// Vision UI EnvironmentDetection React contexts
 import { setDirection, useVisionUIController } from "context";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
 import BarChart from "examples/Charts/BarCharts/BarChart";
@@ -38,20 +38,20 @@ import BarChart from "examples/Charts/BarCharts/BarChart";
 import LineChart from "examples/Charts/LineCharts/LineChart";
 import Footer from "examples/Footer";
 
-// Vision UI Dashboard React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Vision UI EnvironmentDetection React example components
+import EnvironmentDetectionLayout from "examples/LayoutContainers/EnvironmentDetectionLayout";
+import EnvironmentDetectionNavbar from "examples/Navbars/EnvironmentDetectionNavbar";
 import OrderOverview from "layouts/rtl/components/OrderOverview";
 import Projects from "layouts/rtl/components/Projects";
 import ReferralTracking from "layouts/rtl/components/ReferralTracking";
 import SatisfactionRate from "layouts/rtl/components/SatisfactionRate";
 
-// Dashboard layout components
+// EnvironmentDetection layout components
 import WelcomeMark from "layouts/rtl/components/WelcomeMark";
-import { barChartDataDashboard } from "layouts/rtl/data/barChartData";
-import { barChartOptionsDashboard } from "layouts/rtl/data/barChartOptions";
-import { lineChartDataDashboard } from "layouts/rtl/data/lineChartData";
-import { lineChartOptionsDashboard } from "layouts/rtl/data/lineChartOptions";
+import { barChartDataEnvironmentDetection } from "layouts/rtl/data/barChartData";
+import { barChartOptionsEnvironmentDetection } from "layouts/rtl/data/barChartOptions";
+import { lineChartDataEnvironmentDetection } from "layouts/rtl/data/lineChartData";
+import { lineChartOptionsEnvironmentDetection } from "layouts/rtl/data/lineChartOptions";
 import { useEffect } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -72,8 +72,8 @@ function RTL() {
   }, []);
 
   return (
-    <DashboardLayout>
-      <DashboardNavbar />
+    <EnvironmentDetectionLayout>
+      <EnvironmentDetectionNavbar />
       <VuiBox py={3}>
         <VuiBox mb={3}>
           <Grid container spacing={3}>
@@ -142,8 +142,8 @@ function RTL() {
                   </VuiBox>
                   <VuiBox sx={{ height: "310px" }}>
                     <LineChart
-                      lineChartData={lineChartDataDashboard}
-                      lineChartOptions={lineChartOptionsDashboard}
+                      lineChartData={lineChartDataEnvironmentDetection}
+                      lineChartOptions={lineChartOptionsEnvironmentDetection}
                     />
                   </VuiBox>
                 </VuiBox>
@@ -165,8 +165,8 @@ function RTL() {
                     }}
                   >
                     <BarChart
-                      barChartData={barChartDataDashboard}
-                      barChartOptions={barChartOptionsDashboard}
+                      barChartData={barChartDataEnvironmentDetection}
+                      barChartOptions={barChartOptionsEnvironmentDetection}
                     />
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
@@ -293,7 +293,7 @@ function RTL() {
         </Grid>
       </VuiBox>
       <Footer />
-    </DashboardLayout>
+    </EnvironmentDetectionLayout>
   );
 }
 

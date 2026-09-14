@@ -16,7 +16,7 @@
 
 */
 
-export const barChartOptionsDashboard = {
+export const barChartOptionsEnvironmentDetection = {
   chart: {
     toolbar: {
       show: false,

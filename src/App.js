@@ -26,14 +26,14 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard React example components
+// Vision UI EnvironmentDetection React example components
 import Sidenav from "examples/Sidenav";
 import Configurator from "examples/Configurator";
 
-// Vision UI Dashboard React themes
+// Vision UI EnvironmentDetection React themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
 
@@ -42,10 +42,10 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-// Vision UI Dashboard React routes
+// Vision UI EnvironmentDetection React routes
 import routes from "routes";
 
-// Vision UI Dashboard React contexts
+// Vision UI EnvironmentDetection React contexts
 import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 export default function App() {
@@ -136,7 +136,7 @@ export default function App() {
     <CacheProvider value={rtlCache}>
       <ThemeProvider theme={themeRTL}>
         <CssBaseline />
-        {layout === "dashboard" && (
+        {layout === "environmentDetection" && (
           <>
             <Sidenav
               color={sidenavColor}
@@ -153,14 +153,14 @@ export default function App() {
         {layout === "vr" && <Configurator />}
         <Switch>
           {getRoutes(routes)}
-          <Redirect from="*" to="/dashboard" />
+          <Redirect from="*" to="/environmentDetection" />
         </Switch>
       </ThemeProvider>
     </CacheProvider>
   ) : (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {layout === "dashboard" && (
+      {layout === "environmentDetection" && (
         <>
           <Sidenav
             color={sidenavColor}
@@ -177,7 +177,7 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Switch>
         {getRoutes(routes)}
-        <Redirect from="*" to="/dashboard" />
+        <Redirect from="*" to="/environmentDetection" />
       </Switch>
     </ThemeProvider>
   );

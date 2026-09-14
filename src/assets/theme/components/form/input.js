@@ -16,11 +16,11 @@
 
 */
 
-// Vision UI Dashboard React Base Styles
+// Vision UI EnvironmentDetection React Base Styles
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 
-// Vision UI Dashboard  helper functions
+// Vision UI EnvironmentDetection  helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { inputColors } = colors;

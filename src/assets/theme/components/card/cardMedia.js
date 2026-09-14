@@ -16,10 +16,10 @@
 
 */
 
-// Vision UI Dashboard React Base Styles
+// Vision UI EnvironmentDetection React Base Styles
 import borders from "assets/theme/base/borders";
 
-// Vision UI Dashboard React Helper Functions
+// Vision UI EnvironmentDetection React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { borderRadius } = borders;

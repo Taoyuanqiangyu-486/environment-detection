@@ -16,40 +16,32 @@
 
 */
 
-export const lineChartOptionsDashboard = {
+export const barChartOptionsEnvironmentDetection = {
   chart: {
     toolbar: {
       show: false,
     },
   },
   tooltip: {
+    style: {
+      fontSize: "10px",
+      fontFamily: "Plus Jakarta Display",
+    },
+    onDatasetHover: {
+      style: {
+        fontSize: "10px",
+        fontFamily: "Plus Jakarta Display",
+      },
+    },
     theme: "dark",
   },
-  dataLabels: {
-    enabled: false,
-  },
-  stroke: {
-    curve: "smooth",
-  },
   xaxis: {
-    type: "datetime",
-    categories: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
+    categories: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    show: false,
     labels: {
+      show: false,
       style: {
-        colors: "#c8cfca",
+        colors: "#fff",
         fontSize: "10px",
       },
     },
@@ -61,33 +53,42 @@ export const lineChartOptionsDashboard = {
     },
   },
   yaxis: {
+    show: true,
+    color: "#fff",
     labels: {
+      show: true,
       style: {
-        colors: "#c8cfca",
+        colors: "#fff",
         fontSize: "10px",
+        fontFamily: "Plus Jakarta Display",
       },
     },
   },
-  legend: {
+  grid: {
     show: false,
   },
-  grid: {
-    strokeDashArray: 5,
-    borderColor: "#56577A",
-  },
   fill: {
-    type: "gradient",
-    gradient: {
-      shade: "dark",
-      type: "vertical",
-      shadeIntensity: 0,
-      gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
-      inverseColors: true,
-      opacityFrom: 0.8,
-      opacityTo: 0,
-      stops: [],
-    },
-    colors: ["#0075FF", "#2CD9FF"],
+    colors: "#fff",
   },
-  colors: ["#0075FF", "#2CD9FF"],
+  dataLabels: {
+    enabled: false,
+  },
+  plotOptions: {
+    bar: {
+      borderRadius: 8,
+      columnWidth: "12px",
+    },
+  },
+  responsive: [
+    {
+      breakpoint: 768,
+      options: {
+        plotOptions: {
+          bar: {
+            borderRadius: 0,
+          },
+        },
+      },
+    },
+  ],
 };

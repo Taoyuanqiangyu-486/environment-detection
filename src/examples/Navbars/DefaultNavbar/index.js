@@ -28,16 +28,16 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
 
-// Vision UI Dashboard React example components
+// Vision UI EnvironmentDetection React example components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
@@ -120,7 +120,7 @@ function DefaultNavbar({ transparent, light, action }) {
           </VuiTypography>
         </VuiBox>
         <VuiBox color="inherit" display={{ xs: "none", lg: "flex" }} m={0} p={0}>
-          <DefaultNavbarLink icon="donut_large" name="dashboard" route="/dashboard" />
+          <DefaultNavbarLink icon="donut_large" name="environmentDetection" route="/environmentDetection" />
           <DefaultNavbarLink icon="person" name="profile" route="/profile" />
           <DefaultNavbarLink icon="account_circle" name="sign up" route="/authentication/sign-up" />
           <DefaultNavbarLink icon="key" name="sign in" route="/authentication/sign-in" />

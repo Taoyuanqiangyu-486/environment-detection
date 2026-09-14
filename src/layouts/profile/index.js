@@ -31,14 +31,14 @@ import team4 from "assets/images/avatar4.png";
 import profile1 from "assets/images/profile-1.png";
 import profile2 from "assets/images/profile-2.png";
 import profile3 from "assets/images/profile-3.png";
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
 import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
 import Footer from "examples/Footer";
-// Vision UI Dashboard React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+// Vision UI EnvironmentDetection React example components
+import EnvironmentDetectionLayout from "examples/LayoutContainers/EnvironmentDetectionLayout";
 // Overview page components
 import Header from "layouts/profile/components/Header";
 import PlatformSettings from "layouts/profile/components/PlatformSettings";
@@ -47,7 +47,7 @@ import CarInformations from "./components/CarInformations";
 
 function Overview() {
   return (
-    <DashboardLayout>
+    <EnvironmentDetectionLayout>
       <Header />
       <VuiBox mt={5} mb={3}>
         <Grid
@@ -210,7 +210,7 @@ function Overview() {
       </Grid>
 
       <Footer />
-    </DashboardLayout>
+    </EnvironmentDetectionLayout>
   );
 }
 

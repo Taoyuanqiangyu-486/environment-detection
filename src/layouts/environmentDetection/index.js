@@ -21,28 +21,28 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import { Card, LinearProgress, Stack } from "@mui/material";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiProgress from "components/VuiProgress";
 
-// Vision UI Dashboard React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Vision UI EnvironmentDetection React example components
+import EnvironmentDetectionLayout from "examples/LayoutContainers/EnvironmentDetectionLayout";
+import EnvironmentDetectionNavbar from "examples/Navbars/EnvironmentDetectionNavbar";
 import Footer from "examples/Footer";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
 import linearGradient from "assets/theme/functions/linearGradient";
 
-// Vision UI Dashboard React base styles
+// Vision UI EnvironmentDetection React base styles
 import typography from "assets/theme/base/typography";
 import colors from "assets/theme/base/colors";
 
-// Dashboard layout components
-import WelcomeMark from "layouts/dashboard/components/WelcomeMark";
-import Projects from "layouts/dashboard/components/Projects";
-import OrderOverview from "layouts/dashboard/components/OrderOverview";
-import SatisfactionRate from "layouts/dashboard/components/SatisfactionRate";
-import ReferralTracking from "layouts/dashboard/components/ReferralTracking";
+// EnvironmentDetection layout components
+import WelcomeMark from "layouts/environmentDetection/components/WelcomeMark";
+import Projects from "layouts/environmentDetection/components/Projects";
+import OrderOverview from "layouts/environmentDetection/components/OrderOverview";
+import SatisfactionRate from "layouts/environmentDetection/components/SatisfactionRate";
+import ReferralTracking from "layouts/environmentDetection/components/ReferralTracking";
 
 // React icons
 import { IoIosRocket } from "react-icons/io";
@@ -55,18 +55,18 @@ import { FaShoppingCart } from "react-icons/fa";
 // Data
 import LineChart from "examples/Charts/LineCharts/LineChart";
 import BarChart from "examples/Charts/BarCharts/BarChart";
-import { lineChartDataDashboard } from "layouts/dashboard/data/lineChartData";
-import { lineChartOptionsDashboard } from "layouts/dashboard/data/lineChartOptions";
-import { barChartDataDashboard } from "layouts/dashboard/data/barChartData";
-import { barChartOptionsDashboard } from "layouts/dashboard/data/barChartOptions";
+import { lineChartDataEnvironmentDetection } from "layouts/environmentDetection/data/lineChartData";
+import { lineChartOptionsEnvironmentDetection } from "layouts/environmentDetection/data/lineChartOptions";
+import { barChartDataEnvironmentDetection } from "layouts/environmentDetection/data/barChartData";
+import { barChartOptionsEnvironmentDetection } from "layouts/environmentDetection/data/barChartOptions";
 
-function Dashboard() {
+function EnvironmentDetection() {
   const { gradients } = colors;
   const { cardContent } = gradients;
 
   return (
-    <DashboardLayout>
-      <DashboardNavbar />
+    <EnvironmentDetectionLayout>
+      <EnvironmentDetectionNavbar />
       <VuiBox py={3}>
         <VuiBox mb={3}>
           <Grid container spacing={3}>
@@ -123,7 +123,7 @@ function Dashboard() {
               <Card>
                 <VuiBox sx={{ height: "100%" }}>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    温湿度测量
+                    温湿度测�?
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
@@ -135,8 +135,8 @@ function Dashboard() {
                   </VuiBox>
                   <VuiBox sx={{ height: "310px" }}>
                     <LineChart
-                      lineChartData={lineChartDataDashboard}
-                      lineChartOptions={lineChartOptionsDashboard}
+                      lineChartData={lineChartDataEnvironmentDetection}
+                      lineChartOptions={lineChartOptionsEnvironmentDetection}
                     />
                   </VuiBox>
                 </VuiBox>
@@ -158,8 +158,8 @@ function Dashboard() {
                     }}
                   >
                     <BarChart
-                      barChartData={barChartDataDashboard}
-                      barChartOptions={barChartOptionsDashboard}
+                      barChartData={barChartDataEnvironmentDetection}
+                      barChartOptions={barChartOptionsEnvironmentDetection}
                     />
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
@@ -286,8 +286,8 @@ function Dashboard() {
         </Grid>
       </VuiBox>
       <Footer />
-    </DashboardLayout>
+    </EnvironmentDetectionLayout>
   );
 }
 
-export default Dashboard;
+export default EnvironmentDetection;

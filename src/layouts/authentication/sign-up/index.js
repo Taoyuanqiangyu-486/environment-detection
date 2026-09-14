@@ -29,7 +29,7 @@ import Stack from "@mui/material/Stack";
 // Icons
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
@@ -37,7 +37,7 @@ import VuiButton from "components/VuiButton";
 import VuiSwitch from "components/VuiSwitch";
 import GradientBorder from "examples/GradientBorder";
 
-// Vision UI Dashboard assets
+// Vision UI EnvironmentDetection assets
 import radialGradient from "assets/theme/functions/radialGradient";
 import rgba from "assets/theme/functions/rgba";
 import palette from "assets/theme/base/colors";
@@ -61,7 +61,7 @@ function SignIn() {
       description="Use these awesome forms to login or create new account in your project for free."
       image={bgSignIn}
       premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      motto="THE VISION UI ENVIRONMENTDETECTION"
       cardContent
     >
       <GradientBorder borderRadius={borders.borderRadius.form} minWidth="100%" maxWidth="100%">

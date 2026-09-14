@@ -16,14 +16,14 @@
 
 */
 
-export const barChartDataDashboard = [
+export const barChartDataEnvironmentDetection = [
   {
     name: "Sales",
     data: [330, 250, 110, 300, 490, 350, 270, 130, 425],
   },
 ];
 
-export const barChartOptionsDashboard = {
+export const barChartOptionsEnvironmentDetection = {
   chart: {
     toolbar: {
       show: false,
@@ -100,7 +100,7 @@ export const barChartOptionsDashboard = {
   ],
 };
 
-export const lineChartDataDashboard = [
+export const lineChartDataEnvironmentDetection = [
   {
     name: "Mobile apps",
     data: [500, 250, 300, 220, 500, 250, 300, 230, 300, 350, 250, 400],
@@ -111,7 +111,7 @@ export const lineChartDataDashboard = [
   },
 ];
 
-export const lineChartOptionsDashboard = {
+export const lineChartOptionsEnvironmentDetection = {
   chart: {
     toolbar: {
       show: false,

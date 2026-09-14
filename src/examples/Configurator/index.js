@@ -31,7 +31,7 @@ import Icon from "@mui/material/Icon";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-// Vision UI Dashboard React components
+// Vision UI EnvironmentDetection React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
@@ -40,7 +40,7 @@ import VuiSwitch from "components/VuiSwitch";
 // Custom styles for the Configurator
 import ConfiguratorRoot from "examples/Configurator/ConfiguratorRoot";
 
-// Vision UI Dashboard React context
+// Vision UI EnvironmentDetection React context
 import {
   useVisionUIController,
   setOpenConfigurator,
@@ -106,7 +106,7 @@ function Configurator() {
             Vision UI Configurator
           </VuiTypography>
           <VuiTypography variant="body2" color="white" fontWeight="bold">
-            See our dashboard options.
+            See our environmentDetection options.
           </VuiTypography>
         </VuiBox>
 
@@ -220,7 +220,7 @@ function Configurator() {
           <VuiBox mb={2}>
             <VuiButton
               component={Link}
-              href="https://www.creative-tim.com/product/vision-ui-dashboard-react"
+              href="https://www.creative-tim.com/product/vision-ui-environmentDetection-react"
               target="_blank"
               rel="noreferrer"
               color="info"
@@ -232,7 +232,7 @@ function Configurator() {
           </VuiBox>
           <VuiButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/vision-ui-dashboard/"
+            href="https://www.creative-tim.com/learning-lab/react/quick-start/vision-ui-environmentDetection/"
             target="_blank"
             rel="noreferrer"
             color="info"
@@ -244,11 +244,11 @@ function Configurator() {
         </VuiBox>
         <VuiBox display="flex" justifyContent="center">
           <GitHubButton
-            href="https://github.com/creativetimofficial/vision-ui-dashboard-react"
+            href="https://github.com/creativetimofficial/vision-ui-environmentDetection-react"
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star creativetimofficial/vision-ui-dashboard-react on GitHub"
+            aria-label="Star creativetimofficial/vision-ui-environmentDetection-react on GitHub"
           >
             Star
           </GitHubButton>
@@ -264,7 +264,7 @@ function Configurator() {
             <VuiBox mr={1.5}>
               <VuiButton
                 component={Link}
-                href="https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/vision-ui-dashboard-react&text=Check%20Vision%20UI%20Dashboard%20made%20by%20@simmmple_web%20and%20@CreativeTim%20#webdesign%20#dashboard%20#react"
+                href="https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/vision-ui-environmentDetection-react&text=Check%20Vision%20UI%20EnvironmentDetection%20made%20by%20@simmmple_web%20and%20@CreativeTim%20#webdesign%20#environmentDetection%20#react"
                 target="_blank"
                 rel="noreferrer"
                 color="dark"
@@ -275,7 +275,7 @@ function Configurator() {
             </VuiBox>
             <VuiButton
               component={Link}
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/vision-ui-dashboard-react"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/vision-ui-environmentDetection-react"
               target="_blank"
               rel="noreferrer"
               color="dark"
