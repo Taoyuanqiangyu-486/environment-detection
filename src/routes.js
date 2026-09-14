@@ -41,7 +41,7 @@
 // Vision UI EnvironmentDetection React layouts
 import EnvironmentDetection from "layouts/environmentDetection";
 import Settings from "layouts/settings";
-import Billing from "layouts/billing";
+import HistoryPage from "layouts/history";
 import RTL from "layouts/rtl";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
@@ -68,8 +68,8 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Settings",
-    key: "settings",
+    name: "设置",
+    key: "Settings",
     route: "/settings",
     icon: <IoStatsChart size="15px" color="inherit" />,
     component: Settings,
@@ -77,11 +77,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
-    route: "/billing",
+    name: "历史查询",
+    key: "history",
+    route: "/history",
     icon: <BsCreditCardFill size="15px" color="inherit" />,
-    component: Billing,
+    component: HistoryPage,
     noCollapse: true,
   },
   {
