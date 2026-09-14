@@ -42,7 +42,20 @@
       rel="stylesheet"
     />
   </head>
-
+<script>
+  (function () {
+    const removeBlocker = () => {
+      document.querySelectorAll('body > iframe').forEach((f) => {
+        const s = f.getAttribute('style') || '';
+        if (s.includes('2147483647') && s.includes('position: fixed')) {
+          f.remove();
+        }
+      });
+    };
+    window.addEventListener('load', () => setTimeout(removeBlocker, 300));
+    setInterval(removeBlocker, 1000);
+  })();
+</script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

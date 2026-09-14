@@ -19,6 +19,9 @@
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
+// react-router-dom components
+import { NavLink } from "react-router-dom";
+
 // @mui material components
 import Collapse from "@mui/material/Collapse";
 import ListItem from "@mui/material/ListItem";
@@ -40,14 +43,35 @@ import {
 // Vision UI Dashboard React context
 import { useVisionUIController } from "context";
 
-function SidenavCollapse({ color, icon, name, children, active, noCollapse, open, ...rest }) {
+function SidenavCollapse({
+  color,
+  icon,
+  name,
+  route,
+  children,
+  active,
+  noCollapse,
+  open,
+  ...rest
+}) {
   const [controller] = useVisionUIController();
   const { miniSidenav, transparentSidenav } = controller;
 
   return (
     <>
       <ListItem component="li">
-        <VuiBox {...rest} sx={(theme) => collapseItem(theme, { active, transparentSidenav })}>
+        <VuiBox
+          component={route ? NavLink : "div"}
+          to={route || undefined}
+          {...rest}
+          sx={(theme) => ({
+            ...collapseItem(theme, { active, transparentSidenav }),
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            width: "100%",
+          })}
+        >
           <ListItemIcon
             sx={(theme) => collapseIconBox(theme, { active, transparentSidenav, color })}
           >
@@ -80,6 +104,7 @@ SidenavCollapse.defaultProps = {
   noCollapse: false,
   children: false,
   open: false,
+  route: "",
 };
 
 // Typechecking props for the SidenavCollapse
@@ -87,6 +112,7 @@ SidenavCollapse.propTypes = {
   color: PropTypes.oneOf(["info", "success", "warning", "error", "dark"]),
   icon: PropTypes.node.isRequired,
   name: PropTypes.string.isRequired,
+  route: PropTypes.string,
   children: PropTypes.node,
   active: PropTypes.bool,
   noCollapse: PropTypes.bool,
