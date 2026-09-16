@@ -59,7 +59,7 @@ import { IoHome } from "react-icons/io5";
 const routes = [
   {
     type: "collapse",
-    name: "EnvironmentDetection",
+    name: "环境监测",
     key: "environmentDetection",
     route: "/environmentDetection",
     icon: <IoHome size="15px" color="inherit" />,

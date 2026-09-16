@@ -1,19 +1,8 @@
 /*!
-
 =========================================================
 * Vision UI Free React - v1.0.0
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-react/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
+...
 */
 
 // react-router-dom components
@@ -26,9 +15,23 @@ import PropTypes from "prop-types";
 import { Breadcrumbs as MuiBreadcrumbs } from "@mui/material";
 import Icon from "@mui/material/Icon";
 
-// Vision UI EnvironmentDetection React components
+// Vision UI Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
+
+// 路由名 → 中文显示文字
+const routeNameMap = {
+  environmentdetection: "环境监测",
+  profile: "设置",
+  billing: "历史查询",
+  tables: "表格",
+  rtl: "RTL",
+  "sign-in": "登录",
+  "sign-up": "注册",
+};
+
+// 把英文路由名转成中文，没有映射就原样显示
+const translate = (name) => routeNameMap[name] || name;
 
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);
@@ -64,7 +67,7 @@ function Breadcrumbs({ icon, title, route, light }) {
               opacity={light ? 0.8 : 0.5}
               sx={{ lineHeight: 0 }}
             >
-              {el}
+              {translate(el)}
             </VuiTypography>
           </Link>
         ))}
@@ -75,7 +78,7 @@ function Breadcrumbs({ icon, title, route, light }) {
           color={light ? "white" : "dark"}
           sx={{ lineHeight: 0 }}
         >
-          {title.replace("-", " ")}
+          {translate(title.replace("-", " "))}
         </VuiTypography>
       </MuiBreadcrumbs>
       <VuiTypography
@@ -85,18 +88,16 @@ function Breadcrumbs({ icon, title, route, light }) {
         color={light ? "white" : "dark"}
         noWrap
       >
-        {title.replace("-", " ")}
+        {translate(title.replace("-", " "))}
       </VuiTypography>
     </VuiBox>
   );
 }
 
-// Setting default values for the props of Breadcrumbs
 Breadcrumbs.defaultProps = {
   light: false,
 };
 
-// Typechecking props for the Breadcrumbs
 Breadcrumbs.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,

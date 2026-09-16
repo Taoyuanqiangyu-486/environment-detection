@@ -26,14 +26,14 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
-// Vision UI EnvironmentDetection React components
+// Vision UI Dashboard React components
 import VuiBox from "components/VuiBox";
 
-// Vision UI EnvironmentDetection React example components
+// Vision UI Dashboard React example components
 import Sidenav from "examples/Sidenav";
 import Configurator from "examples/Configurator";
 
-// Vision UI EnvironmentDetection React themes
+// Vision UI Dashboard React themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
 
@@ -42,10 +42,10 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-// Vision UI EnvironmentDetection React routes
+// Vision UI Dashboard React routes
 import routes from "routes";
 
-// Vision UI EnvironmentDetection React contexts
+// Vision UI Dashboard React contexts
 import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 export default function App() {
@@ -141,7 +141,7 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand=""
-              brandName="VISION UI FREE"
+              brandName="环境监测"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
@@ -165,7 +165,7 @@ export default function App() {
           <Sidenav
             color={sidenavColor}
             brand=""
-            brandName="VISION UI FREE"
+            brandName="环境监测"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
